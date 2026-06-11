@@ -1,13 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-graphite-950: #07090b;
+  --color-graphite-900: #0d1117;
+  --color-graphite-850: #121820;
+  --color-graphite-800: #17202a;
+  --color-graphite-700: #243142;
+
+  --color-amberline: #f6b84b;
+  --color-mintline: #2dd4bf;
+  --color-dangerline: #fb7185;
+
+  --shadow-glow: 0 0 32px rgba(45, 212, 191, 0.12);
+}
 
 :root {
   color-scheme: dark;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html {
@@ -23,13 +31,6 @@ body {
     radial-gradient(circle at 85% 10%, rgba(45, 212, 191, 0.12), transparent 30rem),
     #07090b;
   color: #e5edf5;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
 }
 
 button:focus-visible,
