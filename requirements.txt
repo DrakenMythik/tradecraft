@@ -1,0 +1,5 @@
+fastapi
+duckdb
+pandas
+pandas-ta
+supabase
